@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Financial Services Account Listing">
+        <div class="slds-m-around_medium">
+
+            <lightning-input type="search" onchange={handleKeyChange} class="slds-m-bottom_small" label="Search"
+                value={searchKey}></lightning-input>
+            <lightning-datatable key-field="Id" data={data} columns={columns} sorted-by={sortedBy}
+                sorted-direction={sortedDirection} onsort={sortColumns}>
+            </lightning-datatable>
+        </div>
+    </lightning-card>
+</template>
