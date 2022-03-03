@@ -26,7 +26,6 @@ export default class LightningDatatableExample extends LightningElement {
     wiredAccounts({ error, data }) {
         if (data) {
             this.data = data.map(o => ({...o, OwnerName: o.Owner.Name}));
-            this.endingRecord = this.pageSize;
             this.columns = columns;
 
             this.error = undefined;
