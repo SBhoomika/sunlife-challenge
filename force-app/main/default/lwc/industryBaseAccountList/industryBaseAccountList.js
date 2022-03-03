@@ -48,4 +48,6 @@ export default class LightningDatatableExample extends LightningElement {
         return refreshApex(this.result);
     }
 
+    // TODO handleUpdate
+
 }
